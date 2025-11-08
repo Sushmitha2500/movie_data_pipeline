@@ -22,4 +22,4 @@ for _, row in movies.iterrows():
 
 con.commit()
 con.close()
-print(f"✅ Done! Populated genres and movie_genres. Inserted links: {inserted_links}")
+print(f"Done! Populated genres and movie_genres. Inserted links: {inserted_links}")

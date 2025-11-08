@@ -49,10 +49,10 @@ for name, q in queries.items():
     try:
         df = pd.read_sql_query(q, con)
         if df.empty:
-            print("⚠️  No rows returned (table may be empty).")
+            print(" No rows returned (table may be empty).")
         else:
             print(df.to_string(index=False))
     except Exception as e:
-        print("❌ Error running query:", e)
+        print("Error running query:", e)
 
 con.close()
