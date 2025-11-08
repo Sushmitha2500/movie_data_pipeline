@@ -65,5 +65,5 @@ cur.execute("SELECT COUNT(*) FROM movie_directors")
 mdcount = cur.fetchone()[0]
 con.close()
 
-print(f"✅ Directors added: {dcount}, movie_directors links: {mdcount}")
+print(f" Directors added: {dcount}, movie_directors links: {mdcount}")
 print(f"Inserted {inserted} new links from OMDb.")
